@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyas Ramanathan A - Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dark-theme">
+
+<nav>
+    <div class="logo">
+        <a href="#home" id="logoImg"><img src="img/S-letter.png" alt="Shreyas Ramanathan A"></a>
+        <a href="#home" id="logolink">My Portfolio</a>
+    </div>
+    <div class="dropdown" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul class="menu-items" id="menuItems">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+    </ul>
+</nav>
+
+<header>
+    <img src="img/me.jpg" alt="Shreyas Ramanathan A" width="300" height="300" id="profImg">
+    <h1>Hi! I'm Shreyas Ramanathan<br>A Web Development Enthusiast!</p>
+    <button id="theme-toggle"><i class="fas fa-sun"></i></button>
+
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="aboutSec">
+        <p><span class="appos">&ldquo;</span>Hi! I'm Shreays Ramanathan, a coding enthusiast & a tech fanatic. Actively engaging myself in learning new skills and upgrading my career!<span class="appos">&rdquo;</span></p>
+
+        <img src="img/coder.jpeg" alt="WebDev" id="webdev">
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+        <div class="allSkills">
+            <div class="skillOne">
+                <li class="skill"><i class="fab fa-html5"></i>HTML5 <p>&#9725;Advanced level</p></li>
+                <li class="skill"><i class="fab fa-css3-alt"></i>CSS3 <p>&#9725;Moderate level</p></li>
+                <li class="skill"><i class="fab fa-js"></i>JavaScript <p>&#9725;Moderate level</p></li>
+                <li class="skill"><i class="fab fa-php"></i>PHP<p>&#9725;Moderate level</p></li>
+                <li class="skill"><i class="fas fa-database"></i>MySQL<p>&#9725;Moderate level</p></li>
+            </div>
+
+            <img src="img/prog.jpg" alt="programmer" id="Programmer">
+                    
+            <div class="skillTwo">
+                <li class="skill"><i class="fas fa-code"></i>C <p>&#9725;Advanced level</p></li>
+                <li class="skill"><i class="fas fa-code"></i>C++<p>&#9725;Advanced level</p></li>
+                <li class="skill"><i class="fab fa-java"></i>Java <p>&#9725;Moderate level</p></li>
+                <li class="skill"><i class="fab fa-python"></i>Python<p>&#9725;Moderate level</p></li>
+                <li class="skill"><i class="fas fa-code"></i>C#<p>&#9725;Basic level</p></li>
+            </div>
+        </div>
+    </ul>
+</section>
+
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project" id="ticTacToe">
+        <div class="pjt1">
+            <h3># Tic Tac Toe Webpage:</h3>
+            <p>A simple web implementation of the classic game Tic Tac Toe.</p>
+            <p>Click the link below to play!</p>
+            <a href="html/ticTacToe.html" target="_blank">Play Tic Tac Toe</a>
+        </div>
+        <img class="ticTacToe" src="img/ttt.jpg" alt="Tic Tac Toe Webpage" id="ttt">
+    </div>
+    
+    <div class="project" id="rpc">
+        <div class="pjt3">
+            <h3 class="cal"># Rock Paper Scissor:</h3>
+            <p>A simple web implementation of the classic game Rock Paper Scissor</p>
+            <p>Click the link below to play!</p>
+            <a href="html/rockPaperScissor.html" target="_blank">Play Rock Paper Scissor</a>
+        </div>
+        <img class="calc" src="img/rpc.jpg" alt="Calculator Webpage" id="rpcImg">
+    </div>
+
+    <div class="project" id="calc">
+        <div class="pjt2">
+            <h3 class="cal"># Calculator:</h3>
+            <p>A simple web implementation of a calculator.</p>
+            <p>Click the link below to check that out!</p>
+            <a href="html/index.html" target="_blank">Use Calculator</a>
+        </div>
+        <img class="calc" src="img/calc.jpg" alt="Calculator Webpage" id="calcu">
+    </div>
+
+</section>
+
+<section id="resume">
+    <h2>Resume</h2>
+    <p id="resPara">Here is my resume! Feel free to have a look at it!</p>
+    <p id="resLink"><a href="files/Resume.pdf" target="_blank" download="Shreyas's Resume">Download Resume (PDF)</a></p>
+</section>
+
+<section id="contact">
+    <h2>Contact Me!</h2>
+    <p><i class="fas fa-envelope"></i> : <a href="mailto:shreyasramanathan2005@gmail.com" target="_blank">shreyasramanathan2005@gmail.com</a></p>
+    <p><i class="fas fa-mobile-alt"></i> : <a href="tel:+919345606005">+91 93456 06005</a></p>
+    <p><i class="fab fa-linkedin"></i> : <a href="https://www.linkedin.com/in/shreyas-ramanathan-7b9996294" target="_blank">LinkedIn/Shreyas Ramanathan</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Shreyas. All rights reserved. | <a href="#">Go to Top</a></p>
+</footer>
+
+<script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        body.classList.toggle('light-theme');
+
+        const currentIcon = toggleButton.querySelector('i');
+        currentIcon.classList.toggle('fa-sun');
+        currentIcon.classList.toggle('fa-moon');
+    });
+
+    function toggleMenu() {
+        const menuItems = document.getElementById('menuItems');
+        menuItems.classList.toggle('showlist');
+    }
+</script>
+
+
+</body>
+</html>
