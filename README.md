@@ -1,3 +1,3 @@
 # Webdev
 
-https://github.com/ShreyasRamanathanA/Webdev/tree/main/Calculator
+https://shreyasramanathana.github.io/Webdev/Calculator
